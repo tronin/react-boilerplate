@@ -168,7 +168,26 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tronin",
+      "name": "Tronin Denis",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/4414123?v=4",
+      "profile": "https://github.com/tronin",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "nikita-bekish",
+      "name": "Nikita Bekish",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35031714?v=4",
+      "profile": "https://github.com/nikita-bekish",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
-  "contributorsPerLine": 8
+  "contributorsPerLine": 8,
+  "commitConvention": "none"
 }

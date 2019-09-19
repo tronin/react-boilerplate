@@ -52,7 +52,7 @@ We hope you enjoy this release and welcome any feedback, bug reports or feature 
 - Migrate default Node version to `lts/dubnium` (**@julienben**)
 - Fix support for `stylelint` (**@jwinn**)
 - Fix setup script for Windows environments (**@mensae**)
-- Generate passing tests for components/containers (**@mjhost**)
+- Generate passing tests for ../containers (**@mjhost**)
 - Rewrite generators code (**@mensae**)
 - Complete rewrite or `generate-templates-for-linting.js` (**@mensae**)
 - `webpack.DefinePlugin` => `webpack.EnvironmentPlugin` (**@nshimiye**)

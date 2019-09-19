@@ -8,16 +8,16 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
-import GlobalStyle from '../../global-styles';
+import globalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -30,7 +30,7 @@ const AppWrapper = styled.div`
 
 export default function App() {
   return (
-    <AppWrapper>
+    <AppWrapper className={globalStyle}>
       <Helmet
         titleTemplate="%s - React.js Boilerplate"
         defaultTitle="React.js Boilerplate"
@@ -44,7 +44,6 @@ export default function App() {
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />
-      <GlobalStyle />
     </AppWrapper>
   );
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 
 const Select = styled.select`
   line-height: 1em;

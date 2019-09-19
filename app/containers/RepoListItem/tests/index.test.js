@@ -31,11 +31,6 @@ describe('<RepoListItem />', () => {
     };
   });
 
-  it('should render a ListItem', () => {
-    const { container } = renderComponent({ item });
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   it('should not render the current username', () => {
     const { queryByText } = renderComponent({
       item,

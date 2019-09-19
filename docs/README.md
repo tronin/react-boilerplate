@@ -20,7 +20,7 @@
 - [Styling (CSS)](css/README.md)
   - [Next Generation CSS](css/README.md#next-generation-css)
   - [CSS Support](css/README.md#css-we-support)
-  - [styled-components](css/README.md#styled-components)
+  - [linaria](css/README.md#linaria)
   - [Stylesheet](css/README.md#stylesheet)
   - [CSS Modules](css/README.md#css-modules)
   - [Sass](css/README.md#sass)
@@ -51,7 +51,7 @@
 
     - Add a Github username to see Redux and Redux Sagas in action: effortless
       async state updates and side effects are now yours :)
-    - Edit the file at `./app/components/Header/index.js` so that the text of
+    - Edit the file at `./app/../Header/index.js` so that the text of
       the `<Button>` component reads "Features!!!"... [Hot Module Reloading](https://webpack.js.org/guides/hot-module-replacement/) gives
       you a feedback loop with your UI so smooth it's almost conversational!
     - Click your (newly emphatic) Features button to see React Router in action...
@@ -90,9 +90,9 @@ _(If they do have to be changed, please [submit an issue](https://github.com/rea
 
 ### CSS
 
-Using [tagged template literals](https://www.styled-components.com/docs/advanced#tagged-template-literals)
-(a recent addition to JavaScript) and the [power of CSS](https://github.com/styled-components/styled-components/blob/master/docs/css-we-support.md),
-`styled-components` allows you to write actual CSS code to style your components.
+Using [tagged template literals](https://www.linaria.com/docs/advanced#tagged-template-literals)
+(a recent addition to JavaScript) and the [power of CSS](https://github.com/linaria/linaria/blob/master/docs/css-we-support.md),
+`linaria` allows you to write actual CSS code to style your components.
 It also removes the mapping between components and styles – using components as a
 low-level styling construct could not be easier!
 

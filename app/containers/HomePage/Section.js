@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 
 const Section = styled.section`
   margin: 3em auto;

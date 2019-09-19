@@ -4,6 +4,9 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const dev = process.env.NODE_ENV !== 'production';
 
 module.exports = options => ({
   mode: options.mode,
@@ -22,10 +25,18 @@ module.exports = options => ({
       {
         test: /\.jsx?$/, // Transform all .js and .jsx files required somewhere with Babel
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: options.babelQuery,
-        },
+        use: [
+          {
+            loader: 'babel-loader',
+            options: options.babelQuery,
+          },
+          {
+            loader: 'linaria/loader',
+            options: {
+              sourceMap: process.env.NODE_ENV !== 'production',
+            },
+          },
+        ],
       },
       {
         // Preprocess our own .css files
@@ -33,7 +44,18 @@ module.exports = options => ({
         // for a list of loaders, see https://webpack.js.org/loaders/#styling
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: dev,
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: { sourceMap: dev },
+          },
+        ],
       },
       {
         // Preprocess 3rd party .css files located in node_modules
@@ -72,11 +94,11 @@ module.exports = options => ({
             loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
-                enabled: false,
+                // enabled: false,
                 // NOTE: mozjpeg is disabled as it causes errors in some Linux environments
                 // Try enabling it in your environment by switching the config to:
-                // enabled: true,
-                // progressive: true,
+                enabled: true,
+                progressive: true,
               },
               gifsicle: {
                 interlaced: false,
@@ -114,6 +136,7 @@ module.exports = options => ({
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development',
     }),
+    new MiniCssExtractPlugin({ filename: 'styles.css' }),
   ]),
   resolve: {
     modules: ['node_modules', 'app'],

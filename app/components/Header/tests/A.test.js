@@ -1,16 +1,10 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import renderer from 'react-test-renderer';
-import 'jest-styled-components';
+import 'linaria-jest';
 
 import A from '../A';
 
 describe('<A />', () => {
-  it('should match the snapshot', () => {
-    const renderedComponent = renderer.create(<A />).toJSON();
-    expect(renderedComponent).toMatchSnapshot();
-  });
-
   it('should have a class attribute', () => {
     const { container } = render(<A />);
     expect(container.querySelector('a').hasAttribute('class')).toBe(true);

@@ -6,16 +6,13 @@ const OfflinePlugin = require('offline-plugin');
 const { HashedModuleIdsPlugin } = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
 
   // In production, we skip all hot-reloading stuff
-  entry: [
-    require.resolve('react-app-polyfill/ie11'),
-    path.join(process.cwd(), 'app/app.js'),
-  ],
-
+  entry: [path.join(process.cwd(), 'app/app.js')],
   // Utilize long-term caching by adding content hashes (not compilation hashes) to compiled assets
   output: {
     filename: '[name].[chunkhash].js',
@@ -140,6 +137,9 @@ module.exports = require('./webpack.base.babel')({
       hashFunction: 'sha256',
       hashDigest: 'hex',
       hashDigestLength: 20,
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles-[contenthash].css',
     }),
   ],
 
