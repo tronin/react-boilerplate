@@ -184,7 +184,7 @@ Let me try and explain with an example!
 
 ```javascript
 // MyStyledComponent.js
-const MyStyledComponent = styled.div`
+const MyStyledComponent = css`
   background-color: green;
 `;
 ```
@@ -231,7 +231,7 @@ To resolve the issue, you can either:
 
 ```javascript
 // MyStyledComponent.js (styled-component css to win)
-const MyStyledComponent = styled.div`
+const MyStyledComponent = css`
   && {
     background-color: green;
   }
@@ -251,7 +251,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 You can do that inside `containers/App/index.js`.
 
-More information is available in the [official documentation](https://github.com/styled-components/styled-components/blob/master/docs/existing-css.md).
+More information is available in the [official documentation](https://github.com/linaria/linaria/blob/master/docs/existing-css.md).
 
 ## Have another question?
 

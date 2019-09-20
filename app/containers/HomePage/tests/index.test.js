@@ -20,19 +20,6 @@ describe('<HomePage />', () => {
     store = configureStore({}, browserHistory);
   });
 
-  it('should render and match the snapshot', () => {
-    const {
-      container: { firstChild },
-    } = render(
-      <Provider store={store}>
-        <IntlProvider locale="en">
-          <HomePage loading={false} error={false} repos={[]} />
-        </IntlProvider>
-      </Provider>,
-    );
-    expect(firstChild).toMatchSnapshot();
-  });
-
   it('should fetch the repos on mount if a username exists', () => {
     const submitSpy = jest.fn();
     render(

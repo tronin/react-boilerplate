@@ -17,17 +17,6 @@ describe('<LocaleToggle />', () => {
     store = configureStore({}, browserHistory);
   });
 
-  it('should match the snapshot', () => {
-    const { container } = render(
-      <Provider store={store}>
-        <LanguageProvider messages={translationMessages}>
-          <LocaleToggle />
-        </LanguageProvider>
-      </Provider>,
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   it('should present the default `en` english language option', () => {
     const { container } = render(
       <Provider store={store}>

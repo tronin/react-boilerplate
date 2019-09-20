@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 
 const ListItem = styled.li`
   margin: 1em 0;

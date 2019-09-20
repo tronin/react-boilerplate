@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import { styled } from 'linaria/react';
 
-import NormalImg from 'components/Img';
+import NormalImg from '../Img';
 
 const Img = styled(NormalImg)`
   width: 100%;

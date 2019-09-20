@@ -29,7 +29,7 @@ module.exports = plop => {
       );
       return `containers/${comp}`;
     } catch (e) {
-      return `components/${comp}`;
+      return `../${comp}`;
     }
   });
   plop.addHelper('curly', (object, open) => (open ? '{' : '}'));

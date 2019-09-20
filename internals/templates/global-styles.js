@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from 'linaria';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = css`
   html,
   body {
     height: 100%;

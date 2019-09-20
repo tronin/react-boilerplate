@@ -20,7 +20,7 @@ Here's a curated list of packages that you should be at least familiar with befo
 - [ ] [Redux Saga](https://redux-saga.github.io/redux-saga/)
 - [ ] [Reselect](https://github.com/reactjs/reselect)
 - [ ] [Immer](https://github.com/mweststrate/immer)
-- [ ] [Styled Components](https://github.com/styled-components/styled-components)
+- [ ] [Styled Components](https://github.com/linaria/linaria)
 
 ### Unit Testing
 
@@ -52,7 +52,7 @@ In any case, here's the TL;DR:
 
 ### `app/`
 
-We use the [container/component architecture](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.4rmjqneiw). `containers/` contains React components which are connected to the redux store. `components/` contains dumb React components which depend on containers for data. **Container components care about how things work, while components care about how things look.**
+We use the [container/component architecture](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.4rmjqneiw). `containers/` contains React components which are connected to the redux store. `../` contains dumb React components which depend on containers for data. **Container components care about how things work, while components care about how things look.**
 
 We've found that for many applications treating single pages (e.g. the LoginPage, the HomePage, etc.) as containers and their small parts (e.g. the Login form, the Navigation bar) as components works well, but there are no rigid rules. **Bend the architecture to the needs of your app, nothing is set in stone!**
 

@@ -4,7 +4,7 @@
   - [Linting](#linting)
   - [sanitize.css](#sanitizecss)
 - [CSS Support](#css-support)
-- [styled-components](#styled-components)
+- [linaria](#linaria)
 - [Stylesheet](#stylesheet)
 - [CSS Modules](#css-modules)
   - [Setup](#setup)
@@ -18,19 +18,19 @@
 
 ## Next Generation CSS
 
-This boilerplate uses [`styled-components`](https://github.com/styled-components/styled-components) :nail_care:
-for styling react components. `styled-components` allows you to write actual CSS inside your JavaScript,
-enabling you to use the [full power of CSS](https://github.com/styled-components/styled-components/blob/master/docs/css-we-support.md) :muscle:
+This boilerplate uses [`linaria`](https://github.com/linaria/linaria) :nail_care:
+for styling react components. `linaria` allows you to write actual CSS inside your JavaScript,
+enabling you to use the [full power of CSS](https://github.com/linaria/linaria/blob/master/docs/css-we-support.md) :muscle:
 without mapping between styles and components.
-There are many ways to style react applications, but many find `styled-components`
+There are many ways to style react applications, but many find `linaria`
 to be a more natural approach to styling components.
 Watch this video for a comparison and to see how it enforces best practices!
 
-[![Styled-components: Enforcing best practices](http://img.youtube.com/vi/jaqDA7Btm3c/0.jpg)](https://youtu.be/jaqDA7Btm3c)
+[![linaria: Enforcing best practices](http://img.youtube.com/vi/jaqDA7Btm3c/0.jpg)](https://youtu.be/jaqDA7Btm3c)
 
 ### Linting
 
-To complement `styled-components`, this boilerplate also has a CSS linting setup. It uses `stylelint` which will help you stay consistent with modern CSS standards. Read about it [here](linting.md).
+To complement `linaria`, this boilerplate also has a CSS linting setup. It uses `stylelint` which will help you stay consistent with modern CSS standards. Read about it [here](linting.md).
 
 ### sanitize.css
 
@@ -41,7 +41,7 @@ it's a modern alternative to CSS resets. More info available on the [`sanitize.c
 
 ## CSS Support
 
-We support and recommend the use of [`styled-components`](#components).
+We support and recommend the use of [`linaria`](#components).
 We also support the use of CSS [stylesheets](#stylesheet).
 
 There are many ways to style web applications, unfortunately, we cannot support them all.
@@ -51,14 +51,14 @@ However, you can integrate the following by using the guides below:
 - [Sass](#sass)
 - [LESS](#less)
 
-## styled-components
+## linaria
 
 Below creates two styled react components (`<Title>`, `<Wrapper>`) and renders them
 as children of the `<Header>` component:
 
 ```jsx
 import React from 'react';
-import styled from 'styled-components';
+import { css } from 'linaria';;
 
 // Create a <Title> react component that renders an <h1> which is
 // centered, palevioletred and sized at 1.5em
@@ -90,7 +90,7 @@ function Button() {
 
 _(The CSS rules are automatically vendor prefixed, so you don't have to think about it!)_
 
-> For more information about `styled-components` see https://github.com/styled-components/styled-components
+> For more information about `linaria` see https://github.com/linaria/linaria
 
 ## Stylesheet
 
