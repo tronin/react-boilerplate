@@ -1,3 +1,9 @@
+<div align="left">
+  <a href="https://circleci.com/gh/tronin/react-linaria-boilerplate">
+    <img src="https://circleci.com/gh/tronin/react-linaria-boilerplate.svg?style=svg" alt="CircleCI" />
+  </a>
+</div>
+
 <br />
 
 <img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
@@ -10,15 +16,7 @@
 <br />
 
 <div align="center">
-  <a href="https://circleci.com/gh/tronin/react-linaria-boilerplate">
-    <img src="https://circleci.com/gh/tronin/react-linaria-boilerplate.svg?style=svg" alt="CircleCI" />
-  </a>
-</div>
-
-<br />
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> </sub>
+  <sub>Originally created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> </sub>
 </div>
 
 ## Features
@@ -68,7 +66,7 @@ But wait... there's more!
 
 There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on how to structure your React.js apps with scalability in mind. It provides rationale for the majority of boilerplate's design decisions.
 
-<sub><i>Keywords: React.js, Redux, Hot Reloading, ESNext, Babel, react-router, Offline First, ServiceWorker, `styled-components`, redux-saga, FontFaceObserver</i></sub>
+<sub><i>Keywords: React.js, Redux, Hot Reloading, ESNext, Babel, react-router, Offline First, ServiceWorker, `linaria`, redux-saga, FontFaceObserver</i></sub>
 
 ## Quick start
 
