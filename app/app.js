@@ -82,5 +82,19 @@ if (!window.Intl) {
 // it's not most important operation and if main code fails,
 // we do not want it installed
 if (process.env.NODE_ENV === 'production') {
-  require('offline-plugin/runtime').install(); // eslint-disable-line global-require
+  const runtime = require('offline-plugin/runtime'); // eslint-disable-line global-require
+
+  runtime.install({
+    onUpdateReady: () => {
+      // Tells to new SW to take control immediately
+      runtime.applyUpdate();
+    },
+    onUpdated: () => {
+      // Reload the webpage to load into the new version
+      window.location.reload();
+    },
+    onUpdateFailed: () => {
+      console.log('SW Event:', 'onUpdateFailed'); // eslint-disable-line
+    },
+  });
 }
