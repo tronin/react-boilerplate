@@ -1,6 +1,6 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import ListItem from '../index';
 
@@ -14,6 +14,6 @@ describe('<ListItem />', () => {
     const content = <div data-testid="test">Hello world!</div>;
     const { getByTestId } = render(<ListItem item={content} />);
     expect(getByTestId('test').tagName).toEqual('DIV');
-    expect(getByTestId('test')).toHaveTextContent('Hello world!');
+    expect(getByTestId('test').textContent).toBe('Hello world!');
   });
 });

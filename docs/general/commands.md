@@ -34,16 +34,6 @@ code necessary to start writing your app!
 > again. This is for your own safety, so you can't delete portions of your project
 > irreversibly by accident.
 
-## Generators
-
-```Shell
-npm run generate
-```
-
-Allows you to auto-generate boilerplate code for common parts of your
-application, specifically `component`s, and `container`s. You can
-also run `npm run generate <part>` to skip the first selection. (e.g. `npm run generate container`)
-
 ## Server
 
 ### Development
@@ -97,7 +87,7 @@ npm test
 ```
 
 Tests your application with the unit tests specified in the `**/tests/*.js` files
-throughout the application.  
+throughout the application.
 All the `test` commands allow an optional `-- [string]` argument to filter
 the tests run by Jest. Useful if you need to run a specific test only.
 
