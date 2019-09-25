@@ -1,6 +1,6 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 
 import ReposList from '../index';
 
