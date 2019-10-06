@@ -3,6 +3,11 @@
     <img src="https://circleci.com/gh/tronin/react-linaria-boilerplate.svg?style=svg" alt="CircleCI" />
   </a>
 </div>
+<div align="left">
+  <a href="https://travis-ci.org/tronin/react-linaria-boilerplate.svg?branch=master">
+    <img src="https://travis-ci.org/tronin/react-linaria-boilerplate.svg?branch=master" alt="Travis CI" />
+  </a>
+</div>
 
 <br />
 
