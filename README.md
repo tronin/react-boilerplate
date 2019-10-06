@@ -9,6 +9,11 @@
   </a>
 </div>
 
+<div align="left">
+<a href='https://coveralls.io/github/tronin/react-linaria-boilerplate'><img src='https://coveralls.io/repos/github/tronin/react-linaria-boilerplate/badge.svg' alt='Coverage Status' /></a>
+</div>
+
+
 <br />
 
 <img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
