@@ -3,6 +3,16 @@
     <img src="https://circleci.com/gh/tronin/react-linaria-boilerplate.svg?style=svg" alt="CircleCI" />
   </a>
 </div>
+<div align="left">
+  <a href="https://travis-ci.org/tronin/react-linaria-boilerplate.svg?branch=master">
+    <img src="https://travis-ci.org/tronin/react-linaria-boilerplate.svg?branch=master" alt="Travis CI" />
+  </a>
+</div>
+
+<div align="left">
+<a href='https://coveralls.io/github/tronin/react-linaria-boilerplate'><img src='https://coveralls.io/repos/github/tronin/react-linaria-boilerplate/badge.svg' alt='Coverage Status' /></a>
+</div>
+
 
 <br />
 
